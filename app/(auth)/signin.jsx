@@ -16,7 +16,7 @@ import validationSchema from "../../utils/authSchema";
 
 const signup = () => {
   const router = useRouter();
-  const handleSignup = () => {};
+  const handleSignin = () => {};
   return (
     <SafeAreaView className={`bg-[#2b2b2b]`}>
       <ScrollView contentContainerStyle={{ height: "100%" }}>
@@ -29,7 +29,7 @@ const signup = () => {
             <Formik
               initialValues={{ email: "", password: "" }}
               validationSchema={validationSchema}
-              onSubmit={handleSignup}
+              onSubmit={handleSignin}
             >
               {({
                 handleChange,
@@ -70,10 +70,10 @@ const signup = () => {
 
                   <TouchableOpacity
                     onPress={handleSubmit}
-                    className="p-2 my-2 bg-[#f49b33] text-black rounded-lg mt-8"
+                    className="p-2 my-2 bg-[#f49b33] text-black rounded-lg mt-10"
                   >
                     <Text className="text-xl font-semibold text-center">
-                      Sing Up
+                      Sing In
                     </Text>
                   </TouchableOpacity>
                 </View>
@@ -82,13 +82,11 @@ const signup = () => {
             <View>
               <TouchableOpacity
                 className="flex flex-row justify-center my-5 p-2 items-center"
-                onPress={() => router.push("/signin")}
+                onPress={() => router.push("/signup")}
               >
-                <Text className="text-white font-semibold">
-                  Already a User?{" "}
-                </Text>
+                <Text className="text-white font-semibold">New User? </Text>
                 <Text className="text-base font-semibold underline text-[#f49b33]">
-                  Sign in
+                  Sign up
                 </Text>
               </TouchableOpacity>
               <Text className="text-center text-base font-semibold mb-4 text-white">

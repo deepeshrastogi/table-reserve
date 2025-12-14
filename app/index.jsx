@@ -42,8 +42,8 @@ export default function Index() {
               <View className="border-b-2 border-[#f49b33] p-2 mb-1 w-24" />
             </Text>
             <TouchableOpacity
-              className="flex flex-row justify-center items-center"
-              onPress={() => router.push("/singin")}
+              className="flex flex-row justify-center my-5 p-2 items-center"
+              onPress={() => router.push("/signin")}
             >
               <Text className="text-white font-semibold">Already a User? </Text>
               <Text className="text-base font-semibold underline text-[#f49b33]">
