@@ -1,3 +1,4 @@
+
 const restaurants = [
   {
     name: "Sea Grill of Merrick Park",
@@ -307,6 +308,5 @@ const slots = [
   },
 ];
 
-// export { carouselImages, restaurants, slots };
-export default restaurants;
+export { carouselImages, restaurants, slots };
 
